@@ -1,9 +1,10 @@
 import React from 'react';
 
 export const Home = () => {
+  console.log('home');
   return (
     <div>
-      home page
+      here will be description about this project
     </div>
   )
 }

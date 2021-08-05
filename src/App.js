@@ -3,31 +3,31 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Redirect
 } from "react-router-dom";
-import {Home} from 'routes';
+import {Home, LifeCycle} from 'routes';
+import Menu from 'components/Menu';
 
-const App = () => (
-  <div className="App">
-  <Router>
-    <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-      </ul>
+const App = () => {
+  const pages = [
+    'Home',
+    'LifeCycle'
+  ];
 
-      <hr />
-    <Switch>
-        <Route exact path="/" component={Home} />
-      </Switch>
-    </Router>
-  </div>
-);
+  console.count('App');
+
+  return (
+    <div>
+      <Router>
+        <Menu pages={pages} />
+        <Switch>
+          <Route exact path="/Home" component={Home} />
+          <Route exact path="/LifeCycle" component={LifeCycle} />
+          <Redirect to="/Home" />
+        </Switch>
+      </Router>
+    </div>
+  );
+}
 
 export default App;

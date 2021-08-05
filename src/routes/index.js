@@ -1,5 +1,7 @@
 import Home from './Home';
+import LifeCycle from './LifeCycle';
 
 export {
-  Home
+  Home,
+  LifeCycle
 };
