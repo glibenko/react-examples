@@ -1,0 +1,16 @@
+**/*.svg
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.woff
+**/*.woff2
+**/*.css
+**/*.scss
+**/*.spec.js
+**/*.spec.js.snap
+**/*.md
+**/*.json
+**/*.zip
+**/*.test.js
+**/*.d.ts

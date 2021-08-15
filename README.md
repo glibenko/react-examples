@@ -5,8 +5,6 @@ This app about React, Redux and their pitfalls based on Create React App
 ### Fast start
 ```sh
 # Clone the repository
-$ git clone https://github.com/njiyto/react-examples.git
-
 # Install dependencies
 $ npm install
 
